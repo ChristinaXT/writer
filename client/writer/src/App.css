@@ -1,38 +1,76 @@
+
+@import "https://fonts.googleapis.com/css?family=Grenze|Mansalva&display=swap" rel="stylesheet";
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background: rgba(0, 0, 153, .5);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  letter-spacing: .75px;
+  margin-left: 3.5em;
+  transition: 0.3s ease-in-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.topnav a:first-child {
+  margin-left: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/* Menu Links - change color on hover */
+.topnav a:hover {
+  background: rgba(255, 153, 51, .5);
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-inner-container {
+  padding-left: 16px;
+  margin-bottom: 2.35em;
+}
+
+.menu-inner-container a {
+  text-decoration: none;
+}
+
+/* Links - change color on hover */
+p a:hover {
+  color: steelblue;
+}
+
+form {
+  float: none;
+  margin-left: 50px;
+}
+
+form input {
+  font-family: 'Grenze', serif;
+  font-size: 15px;
+  color: #f7efe2;
+  background: transparent;
+  text-shadow: 5px 2px navy;
+  cursor: pointer;
+  /* border: none; */
+}
+
+form input:hover {
+  color: #FF3355;
+}
+
+#logOutButton,
+#loggedin {
+  float: right;
+  margin-right: 1.25em;
+  vertical-align: middle;
+  margin-block-start: 1em;
 }
